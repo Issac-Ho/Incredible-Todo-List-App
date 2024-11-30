@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 import MainLayout from '../layouts/MainLayout';
 
-const AboutScreen = () => {
+const AboutScreen = ({ navigation }) => {
   return (
     <MainLayout>
       <View style={styles.container}>

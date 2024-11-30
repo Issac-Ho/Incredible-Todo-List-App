@@ -6,8 +6,10 @@ function ToDoForm({ addTask }) {
   const [taskText, setTaskText] = useState('');
 
   const handleAddTask = () => {
-    addTask(taskText);
-    setTaskText(''); // Clear input field after adding task
+    if (taskText.trim()) {
+      addTask(taskText);
+      setTaskText('');
+    }
   };
 
   return (
